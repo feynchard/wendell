@@ -1,0 +1,30 @@
+<!-- Indices written at Mon, 9 Mar 2015 13:01:16 CST -->
+
+<datastore-indexes>
+
+    <!-- Used 14 times in query history -->
+    <datastore-index kind="Todo" ancestor="true" source="auto">
+        <property name="complete" direction="asc"/>
+        <property name="directory" direction="asc"/>
+        <property name="todo" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Todo" ancestor="true" source="auto">
+        <property name="startDate" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Todo" ancestor="true" source="auto">
+        <property name="endDate" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Todo" ancestor="true" source="auto">
+        <property name="directory" direction="asc"/>
+        <property name="todo" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

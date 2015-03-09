@@ -1,0 +1,51 @@
+<!-- Generated from app.yaml. Do not edit. -->
+<web-app version='2.5' xmlns='http://java.sun.com/xml/ns/javaee' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd'>
+  <servlet>
+    <servlet-name>Wendell</servlet-name>
+    <servlet-class>wendell.user.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>wendell.user.web.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateUser</servlet-name>
+    <servlet-class>wendell.user.web.CreateUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WebService</servlet-name>
+    <servlet-class>wendell.web.service.WebServiceServlet</servlet-class>
+  </servlet>
+  <filter>
+    <filter-name>ObjectifyFilter</filter-name>
+    <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ObjectifyFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet-mapping>
+    <servlet-name>Wendell</servlet-name>
+    <url-pattern>/wendell</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateUser</servlet-name>
+    <url-pattern>/CreateUser.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebService</servlet-name>
+    <url-pattern>/Service.do</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>wendell</welcome-file>
+  </welcome-file-list>
+<servlet>
+  <servlet-name>startup</servlet-name>
+  <servlet-class>wendell.StartupServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+</servlet>
+</web-app>

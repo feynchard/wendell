@@ -1,0 +1,30 @@
+body {
+	background-color: #f3f3f3;
+}
+
+#logoutForm {
+	width: 300px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#logoutForm button{
+	width: 100%;
+}
+
+#logo {
+	width: 200px;
+	margin: 50px auto 0px auto;
+	text-align: center;
+}
+
+#logo img {
+	width: 200px;
+}
+
+#logo label {
+	color: #99FF00;
+	font-size: 20pt;
+}

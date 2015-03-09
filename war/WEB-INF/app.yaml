@@ -1,0 +1,40 @@
+application: life-plan-engagement
+version: pre-alpha
+runtime: java
+threadsafe: true
+
+handlers:
+  - url: /*
+    filter: com.googlecode.objectify.ObjectifyFilter
+    name: ObjectifyFilter
+
+  - url: /wendell
+    servlet: wendell.user.web.LoginServlet
+    name: Wendell
+    
+  - url: /Logout.do
+    servlet: wendell.user.web.LogoutServlet
+    name: Logout
+    
+  - url: /CreateUser.do
+    servlet: wendell.user.web.CreateUserServlet
+    name: CreateUser
+    
+  - url: /Service.do
+    servlet: wendell.web.service.WebServiceServlet
+    name: WebService
+    
+welcome_files:
+  - wendell
+  
+static_files:
+  - include: image/LifeNote_logo.png
+ 
+sessions_enabled: true
+
+web_xml: |
+  <servlet>
+    <servlet-name>startup</servlet-name>
+    <servlet-class>wendell.StartupServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>

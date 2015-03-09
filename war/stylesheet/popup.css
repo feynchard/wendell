@@ -1,0 +1,19 @@
+.popup {
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+	margin: 0 auto;
+	background: #FFF;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#confirmMassage {
+	font-size: 18pt;
+	height: 100px;
+}
+
+#confirmBtnDiv {
+	width: 150px;
+	margin: 0 0 0 auto;
+}

@@ -1,0 +1,87 @@
+#navBar {
+	background-color: #f7f7f7;
+	height: 800px;
+}
+
+#userName {
+	font-size: 18pt;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#logout {
+	display: block;
+	margin: 0 0 0 auto;
+	float: right;
+}
+
+#functionSection {
+	margin-top: 15px;
+}
+
+#content {
+	background-color: rgb(200, 230, 180);
+	height: 800px;
+}
+
+#todoes {
+	margin-top: 30px;
+}
+
+#viewCalendarDiv {
+	margin-top: 30px;
+	font-size: 15pt;
+	margin-left: -15px;
+}
+
+#calendar {
+	background-color: white;
+	width: 900px;
+	height: 700px;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 20px;
+	padding: 20px;
+}
+
+#calendarDiv {
+	display: fixed;
+	width: 0px;
+	height: 0px;
+}
+
+#editor {
+	padding: 15px;
+	border-radius: 5px;
+	height: 600px;
+	margin-left: -15px;
+	background-color: #f7f7f7;
+	height: 650px;
+}
+
+#entry {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.checkBox {
+	width: 14px;
+	height: 14px;
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.26);
+	display: inline-block;
+	background: linear-gradient(to bottom, rgba(217, 217, 215, 0),
+		rgba(217, 217, 215, 0.26));
+}
+
+.todo {
+	margin-left: 10px;
+}
+
+#createDirBtn {
+	width: 100%;
+}
+
+#createProjectBtn {
+	width: 100%;
+}
